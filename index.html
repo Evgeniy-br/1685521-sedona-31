@@ -19,8 +19,9 @@
       </nav>
     </header>
     <main class="content">
+      <h1 class="main-title-index">Город-курорт Седона</h1>
       <section class="section-welcome">
-        <h1 class="main-title">Седона — небольшой городок в Аризоне,заслуживающий большего!</h1>
+        <h2 class="main-title">Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
         <img src="https://via.placeholder.com/1200x509" width="1200" height="509" alt="Welcome to the gorgeous Sedona!">
         <p class="section-welcome-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
@@ -39,17 +40,14 @@
           </li>
           <li class="advantage-list-item">
             <h3 class="advantage-list-item-subtitle">Жильё</h3>
-            <img src="https://via.placeholder.com/75x72" width="75" height="72" alt="Иконка жильё">
             <p class="advantage-list-item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="advantage-list-item">
             <h3 class="advantage-list-item-subtitle">Еда</h3>
-            <img src="https://via.placeholder.com/75x72" width="75" height="72" alt="Иконка еда">
             <p class="advantage-list-item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="advantage-list-item">
             <h3 class="advantage-list-item-subtitle">Сувениры</h3>
-            <img src="https://via.placeholder.com/75x72" width="75" height="72" alt="Иконка сувенир">
             <p class="advantage-list-item-text">Не только китайского, но и местного
               производства!</p>
           </li>
@@ -90,6 +88,29 @@
         <p class="section-offers-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
       </section>
+      <form action="https://echo.htmlacademy.ru" method="GET">
+        <p class="section-offers-text">
+          <label for="arrival">Дата заезда:</label>
+          <input type="date" id="arrival" name="arrival" value="2017-04-28">
+        </p>
+        <p class="section-offers-text">
+          <label for="departure">Дата выезда:</label>
+          <input type="date" id="departure" name="departure" value="2017-07-04">
+        </p>
+        <p class="section-offers-text">
+          <label for="grown"></label>
+          <input type="number" id="grown" name="grown" value="2">
+        </p>
+        <p class="section-offers-text">
+          <label for="children"></label>
+          <input type="number" id="children" name="children" value="0">
+        </p>
+        <button type="submit">Найти</button>
+      </form>
+      <section class="map">
+        <h2 class="map-title">Карта Седоны</h2>
+        <img src="https://via.placeholder.com/1199x594" width="1199" height="594" alt="Карта Седоны">
+      </section>
     </main>
     <footer>
       <section class="section-contacts">
@@ -100,13 +121,13 @@
         <h2 class="section-social-title">Мы в соцсетях</h2>
         <ul class="section-social-list">
           <li class="section-social-items">
-            <a href="#"><img src="https://via.placeholder.com/46x48" width="46" height="48" alt="Twitter"></a>
+            <a href="#">Twitter</a>
           </li>
           <li class="section-social-items">
-            <a href="#"><img src="https://via.placeholder.com/46x48" width="46" height="48" alt="Facebook"></a>
+            <a href="#">Facebook</a>
           </li>
           <li class="section-social-items">
-            <a href="#"><img src="https://via.placeholder.com/46x48" width="46" height="48" alt="Youtube"></a>
+            <a href="#">YouTube</a>
           </li>
         </ul>
       </section>
@@ -118,6 +139,11 @@
     </footer>
   </body>
 </html>
+
+
+
+
+
 
 
 
