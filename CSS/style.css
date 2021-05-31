@@ -2,6 +2,7 @@
 
 :root {
   --basic-black: #000000;
+  --basic-black-transparent: rgba(0, 0, 0, 0.3);
   --basic-white: #ffffff;
   --basic-extra-dark: #333333;
   --basic-dark: #666666;
@@ -10,6 +11,7 @@
   --basic-neutral-light: #e5e5e5;
   --basic-light: #eeeeee;
   --basic-extra-light: #f2f2f2;
+  --blue-extra-dark: #3d6483;
   --blue-dark: #5496bd;
   --blue-neutral: #669ec0;
   --blue-light: #81b3d2;
@@ -49,17 +51,10 @@
   margin: 0;
   padding: 0;
   font-family: 'PT Sans', Arial, sans-serif;
-  font-weight: 700;
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
   text-transform: uppercase;
-}
-
-.button {
-  text-decoration: none;
-  line-height: 21px;
-  color: var(--basic-black);
 }
 
 .img {
@@ -77,11 +72,17 @@
   list-style: none;
 }
 
-.info-nav:hover {
+.nav-link {
+  color: var(--basic-black);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-link:hover {
   color: var(--blue-light);
 }
 
-.info-nav:active {
+.nav-link:active {
   opacity: 0.3;
 }
 
@@ -94,6 +95,7 @@
   background:
     url(../img/welcome-sedona.png) no-repeat 50% 50%,
     url(../img/background-welcome-sedona.jpg) no-repeat;
+  background-color: var(--blue-light);
 }
 
 .picture::after {
@@ -117,8 +119,7 @@
 }
 
 
-.section-welcome-text {
-  font-weight: normal;
+.welcome-text {
   color: var(--basic-extra-dark);
 }
 
@@ -137,8 +138,7 @@
   font-size: 21px;
 }
 
-.advantage-list-item  {
-  font-weight: normal;
+.advantage-list-item-text  {
   color: var(--basic-extra-dark);
 }
 
@@ -155,7 +155,6 @@
 
 .offers-text {
   line-height: 24px;
-  font-weight: normal;
 }
 
 
@@ -165,7 +164,7 @@
   color: var(--basic-white);
   background-color: var(--brown-light);
   text-transform: inherit;
-  font-weight: inherit;
+  font-weight: 700;
 }
 
 .search-btn:hover {
@@ -192,6 +191,12 @@
   border: none;
 }
 
+.modal-input::placeholder {
+  color: var(--basic-black);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .modal-input:hover {
   background-color: var(--basic-neutral);
   border: none;
@@ -207,7 +212,7 @@
   font-size: 21px;
   background-color: var(--blue-light);
   text-transform: inherit;
-  font-weight: inherit;
+  font-weight: 700;
   color: var(--basic-white);
 }
 
@@ -228,20 +233,18 @@
 
 .contacts-title {
   font-size: 21px;
+  font-weight: 700;
 }
 
 .link-tel {
   text-decoration: none;
   color: inherit;
   font-size: 21px;
+  font-weight: 700;
 }
 
 .social-list {
   list-style: none;
-}
-
-.academy-text {
-  font-weight: normal;
 }
 
 .social-items {
@@ -256,6 +259,11 @@
   background-color: var(--blue-dark);
 }
 
+.social-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Catalog */
 
 /* Filter */
@@ -263,12 +271,15 @@
 .filter-catalog {
   background-image: url(../img/background-blurred.jpg);
   background-repeat: no-repeat;
+  background-color: var(--blue-extra-dark);
+  background-size: 100% 100%;
 }
 
 .label-filter {
   font-size: 16px;
   line-height: 21px;
   color: var(--basic-white);
+  font-weight: 700;
 }
 
 .infrastructure-list,
@@ -277,26 +288,22 @@
 }
 
 .checkbox {
-  font-weight: normal;
   line-height: 21px;
   color: var(--basic-white);
 }
 
 .price-choice {
-  font-weight: normal;
   line-height: 21px;
   color: var(--basic-white);
 }
 
 .input-price {
-  font-weight: normal;
   line-height: 21px;
   color: var(--basic-white);
   background-color: transparent;
 }
 
 .btn-filter {
-  font-weight: normal;
   line-height: 21px;
   color: var(--basic-white);
   background-color: transparent;
@@ -306,7 +313,6 @@
 }
 
 .btn-filter:hover {
-  font-weight: normal;
   line-height: 21px;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -326,16 +332,17 @@
 .result-text {
   font-size: 12px;
   line-height: 18px;
-  font-weight: normal;
 }
 
 .breadcrumbs {
   font-size: 12px;
   line-height: 18px;
-  font-weight: normal;
   text-decoration: none;
-  opacity: 0.3;
   border-bottom: 1px dashed #81B3D2;
+}
+
+.breadcrumbs:nth-child(n+2) {
+  color: var(--basic-black-transparent);
 }
 
 .breadcrumbs:hover,
@@ -347,13 +354,16 @@
 .breadcrumbs:active,
 .breadcrumbs.active:active {
   color: var(--basic-black);
-  opacity: 1;
   border-bottom: none;
 }
 
 .breadcrumbs.active {
   color: var(--blue-light);
   border: none;
+}
+
+.result-list {
+  list-style: none;
 }
 
 .title-item {
@@ -378,6 +388,7 @@
   color: var(--basic-white);
   background-color: var(--blue-light);
   text-decoration: none;
+  font-weight: 700;
 }
 
 .details-btn:hover {
@@ -394,6 +405,7 @@
   color: var(--basic-white);
   background-color: var(--brown-light);
   text-decoration: none;
+  font-weight: 700;
 }
 
 .reserved-btn:hover {
@@ -406,7 +418,6 @@
 }
 
 .rating {
-  font-weight: normal;
   line-height: 21px;
   color: var(--basic-dark);
   background-color: var(--basic-extra-light);

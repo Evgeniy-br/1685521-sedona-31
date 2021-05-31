@@ -7,20 +7,20 @@
     <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body-page">
     <header class="header">
-      <a class="button" href="#">
+      <a href="#">
         <img class="img" src="img/logo.svg" width="138" height="70" alt="Логотип курорта">
       </a>
       <nav class="nav">
         <ul class="nav-main">
-          <li class="nav-item"><a class="nav-link button info-nav" href="#">Информация</a></li>
-          <li class="nav-item"><a class="nav-link button" href="#">Фото и видео</a></li>
-          <li class="nav-item"><a class="nav-link button" href="#">Карта штата</a></li>
-          <li class="nav-item"><a class="nav-link button" href="catalog.html">Гостиницы</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Информация</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Фото и видео</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Карта штата</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -30,7 +30,7 @@
       </div>
       <section class="section-welcome">
         <h2 class="main-title">Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
-        <p class="section-welcome-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p class="welcome-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class="section-advantage">
         <h2 class="section-advantage-title">Наши преимущества</h2>
@@ -70,22 +70,22 @@
           <li class="advantage-list-item">
             <h3 class="advantage-subtitle">Небольшая
               площадь</h3>
-            <p class="section-advantage-text">— №3 —</p>
-            <p class="section-advantage-text">Все достопримечательности
+            <p class="advantage-list-item-text">— №3 —</p>
+            <p class="advantage-list-item-text">Все достопримечательности
               находятся очень близко</p>
           </li>
           <li class="advantage-list-item">
             <h3 class="advantage-subtitle">Красивая
               дорога</h3>
-            <p class="section-advantage-text">— №4 —</p>
-            <p class="section-advantage-text">Ехать в седону из лас-вегаса совсем
+            <p class="advantage-list-item-text">— №4 —</p>
+            <p class="advantage-list-item-text">Ехать в седону из лас-вегаса совсем
               не скучно!</p>
           </li>
           <li class="advantage-list-item">
             <h3 class="advantage-subtitle">Мало
               туристов</h3>
-            <p class="section-advantage-text">— №5 —</p>
-            <p class="section-advantage-text">Большинство едет в гранд каньон
+            <p class="advantage-list-item-text">— №5 —</p>
+            <p class="advantage-list-item-text">Большинство едет в гранд каньон
               и толпится там</p>
           </li>
         </ul>
@@ -98,24 +98,24 @@
       <form class="modal" action="https://echo.htmlacademy.ru" method="GET">
         <p class="section-offers-text">
           <label class="modal-label" for="arrival">Дата заезда:</label>
-          <input class="modal-input" type="date" id="arrival" name="arrival" value="2017-04-28">
+          <input class="modal-input" type="text" id="arrival" name="arrival" placeholder="24 апреля 2017">
           <button type="button"></button>
         </p>
         <p class="section-offers-text">
           <label class="modal-label" for="departure">Дата выезда:</label>
-          <input class="modal-input" type="date" id="departure" name="departure" value="2017-07-04">
+          <input class="modal-input" type="text" id="departure" name="departure" placeholder="4 июля 2017">
           <button type="button"></button>
         </p>
         <p class="section-offers-text">
           <label class="modal-label" for="grown">Взрослые:</label>
           <button type="button"></button>
-          <input class="modal-input" type="number" id="grown" name="grown" value="2">
+          <input class="modal-input" type="text" id="grown" name="grown" placeholder="2">
           <button type="button"></button>
         </p>
         <p class="section-offers-text">
           <label class="modal-label" for="children">Дети:</label>
           <button type="button"></button>
-          <input class="modal-input" type="number" id="children" name="children" value="0">
+          <input class="modal-input" type="text" id="children" name="children" placeholder="0">
           <button type="button"></button>
         </p>
         <button class="modal-btn-src" type="submit">Найти</button>
@@ -134,13 +134,13 @@
         <h2 class="section-social-title">Мы в соцсетях</h2>
         <ul class="social-list">
           <li class="social-items">
-            <a class="button" href="#">Twitter</a>
+            <a class="social-link" href="#">Twitter</a>
           </li>
           <li class="social-items">
-            <a class="button" href="#">Facebook</a>
+            <a class="social-link" href="#">Facebook</a>
           </li>
           <li class="social-items">
-            <a class="button" href="#">YouTube</a>
+            <a class="social-link" href="#">YouTube</a>
           </li>
         </ul>
       </section>
