@@ -20,6 +20,8 @@
   --brown-light: #766357;
   --special-white: rgba(255, 255, 255, 0.9);
   --special-white-transparent: rgba(255, 255, 255, 0.3);
+  --wrapper-shadow: rgba(0, 1, 1, 0.2);
+  --catalog-border: rgba(229, 229, 229, 1);
 }
 
 /* Font connection */
@@ -67,12 +69,13 @@
   height: 100%;
 }
 
-.wrapper-body {
+.wrapper-index {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   width: 1200px;
   min-height: 100%;
   margin: 0 auto;
+  box-shadow: 0px 5px 15px var(--wrapper-shadow);
 }
 
 .img {
@@ -354,22 +357,6 @@
   width: 114px;
   padding-left: 53px;
 }
-/* .arrival {
-  margin-right: 20px;
-}
-
-.departure {
-  margin-right: 16px;
-}
-
-.grown {
-  margin-right: 35px;
-}
-
-.children {
-  margin-right: 24px;
-  margin-left: 53px;
-} */
 
 .modal-input::placeholder {
   color: var(--basic-black);
@@ -483,6 +470,17 @@
 }
 /* Catalog */
 
+.wrapper-catalog {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  min-height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  box-shadow: 0px 5px 15px var(--wrapper-shadow);
+}
+
 /* Filter */
 
 .filter-catalog {
@@ -490,6 +488,34 @@
   background-repeat: no-repeat;
   background-color: var(--blue-extra-dark);
   background-size: 100% 100%;
+  min-height: 217px;
+}
+
+.form-catalog {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 217px;
+}
+
+.filter-fieldset {
+  margin: 0;
+  padding: 0;
+  margin-top: 26.5px;
+  border: none;
+}
+
+.filter-fieldset:nth-of-type(1) {
+  width: 254px;
+  margin-left: 72px;
+}
+
+.filter-fieldset:nth-of-type(2) {
+  margin-right: auto;
+}
+
+.filter-fieldset:nth-of-type(3) {
+  margin-right: 73px;
 }
 
 .label-filter {
@@ -501,6 +527,8 @@
 
 .infrastructure-list,
 .housing-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -540,22 +568,53 @@
 
 .result {
   background-color: var(--basic-white);
+  display: grid;
+  grid-template-rows: min-content min-content;
+}
+
+.result-sorting {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--catalog-border);
+}
+
+.result-container {
+  display: flex;
+}
+
+.link-up-down {
+  min-height: 86px;
+  width: 50px;
 }
 
 .result-title {
-   font-size: 21px;
+  font-size: 21px;
+  width: 190px;
+  margin-right: 45px;
+  margin-top: 29px;
+  text-align: end;
 }
 
 .result-text {
   font-size: 12px;
   line-height: 18px;
+  margin-top: 31px;
+  width: 115px;
 }
 
+.breadcrumbs-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 240px;
+
+  }
 .breadcrumbs {
   font-size: 12px;
   line-height: 18px;
   text-decoration: none;
   border-bottom: 1px dashed #81B3D2;
+  margin-top: 32px;
 }
 
 .breadcrumbs:nth-child(n+2) {
@@ -579,12 +638,50 @@
   border: none;
 }
 
+/* Accommodation options */
+
 .result-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: grid;
+}
+
+.result-list-items {
+  display: flex;
+  justify-content: space-between;
+  grid-template-rows: repeat(3, min-content);
+  border-bottom: 1px solid var(--catalog-border);
+}
+
+.card {
+  margin-left: 73px;
+  width: 425px;
+  display: grid;
+  grid-template-columns: 164px min-content min-content;
+  grid-template-rows: min-content min-content 1fr;
+}
+
+.rating-contain {
+  margin-right: 71px;
+}
+
+.card .img {
+  width: 135px;
+  height: 90px;
+  order: -1;
+  grid-area: 1 / 1 / -1 / -1;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .title-item {
+  margin: 0;
+  padding: 0;
+  grid-area: 1 / 2 / 2 / -1;
   font-size: 21px;
+  margin-top: 23.5px;
+  margin-bottom: 7px;
 }
 
 .title-item:hover {
@@ -596,8 +693,19 @@
 }
 
 .result-list-text {
+  margin: 0;
+  padding: 0;
   line-height: 21px;
   color: var(--basic-extra-dark);
+  margin-bottom: 15.5px;
+}
+
+.result-list-text:first-of-type {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.result-list-text:last-of-type {
+  grid-area: 2 / 3 / 3 / 4;
 }
 
 .details-btn {
@@ -606,6 +714,12 @@
   background-color: var(--blue-light);
   text-decoration: none;
   font-weight: 700;
+  grid-area: 3 / 2 / 3 / 3;
+  width: 110px;
+  height: 27px;
+  text-align: center;
+  padding-top: 3px;
+  margin-right: 6px;
 }
 
 .details-btn:hover {
@@ -623,6 +737,11 @@
   background-color: var(--brown-light);
   text-decoration: none;
   font-weight: 700;
+  grid-area: 3 / 3 / 3 / 4;
+  width: 142px;
+  height: 27px;
+  text-align: center;
+  padding-top: 3px;
 }
 
 .reserved-btn:hover {

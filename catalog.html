@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body-page">
-    <div class="wrapper-body">
+    <div class="wrapper-catalog">
       <header class="header">
         <a class="main-link" href="index.html">
           <img class="img" src="img/logo.svg" width="138" height="70" alt="Логотип курорта">
@@ -25,8 +25,8 @@
         <h1 class="main-title-catalog visually-hidden">Выбор жилья</h1>
         <section class="filter-catalog">
           <h2 class="filter-catalog-title visually-hidden">Фильтр гостиниц</h2>
-          <form action="https://echo.htmlacademy.ru" method="GET">
-            <fieldset>
+          <form class="form-catalog" action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset class="filter-fieldset">
               <legend class="label-filter">Инфраструктура:</legend>
               <ul class="infrastructure-list">
                 <li class="infrastructure-item">
@@ -43,7 +43,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-fieldset">
               <legend class="label-filter">Тип жилья:</legend>
               <ul class="housing-list">
                 <li class="items-housing">
@@ -60,56 +60,78 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-fieldset">
               <legend class="label-filter">Стоимость в сутки, &#8381;</legend>
               <div class="price-choice">
                 <label>от <input  class="input-price" type="text" name="price-min" value="0"></label>
                 <label>до <input  class="input-price" type="text" name="price-max" value="3000"></label>
               </div>
               <input type="range" min="0" max="3000">
+              <button class="btn-filter" type="submit">Показать</button>
             </fieldset>
-            <button class="btn-filter" type="submit">Показать</button>
           </form>
         </section>
         <section class="result">
-          <h2 class="result-title">Найдено: 3</h2>
-          <p class="result-text">Сортировка:</p>
-          <div>
-            <a class="breadcrumbs active" href="#">По цене</a>
-            <a class="breadcrumbs" href="#">По типу</a>
-            <a class="breadcrumbs" href="#">По рейтингу</a>
-          </div>
-          <div class="link-up-down">
-            <a href="#"></a>
-            <a href="#"></a>
+          <div class="result-sorting">
+            <div class="result-container">
+              <h2 class="result-title">Найдено: 3</h2>
+              <p class="result-text">Сортировка:</p>
+              <div class="breadcrumbs-container">
+                <a class="breadcrumbs active" href="#">По цене</a>
+                <a class="breadcrumbs" href="#">По типу</a>
+                <a class="breadcrumbs" href="#">По рейтингу</a>
+              </div>
+            </div>
+            <div class="link-up-down">
+              <a href="#"></a>
+              <a href="#"></a>
+            </div>
           </div>
           <ul class="result-list">
             <li class="result-list-items">
-              <h2 class="title-item">Amara Resort & Spa</h2>
-              <img class="img" src="img/houses-img/amara-resort.jpg" width="135" height="90" alt="Здание на фоне деревьев и гор">
-              <p class="result-list-text">Гостиница</p>
-              <p class="result-list-text">от 4000 &#8381;</p>
-              <a class="details-btn" href="#">Подробнее</a>
-              <a class="reserved-btn" href="#">Забронировать</a>
-              <p class="rating">Рейтинг: 8,5</p>
+              <div class="card">
+                <h2 class="title-item">Amara Resort & Spa</h2>
+                <img class="img" src="img/houses-img/amara-resort.jpg" width="135" height="90" alt="Здание на фоне деревьев и гор">
+                <p class="result-list-text">Гостиница</p>
+                <p class="result-list-text">от 4000 &#8381;</p>
+                <a class="details-btn" href="#">Подробнее</a>
+                <a class="reserved-btn" href="#">Забронировать</a>
+              </div>
+              <div class="rating-contain">
+                <p class="rating">
+                  Рейтинг: 8,5
+                </p>
+              </div>
             </li>
             <li class="result-list-items">
-              <h2 class="title-item">Desert Quail Inn</h2>
-              <img class="img" src="img/houses-img/desert-quail.jpg" width="135" height="90" alt="Небольшой дом с благоустроенной улицей">
-              <p class="result-list-text">Мотель</p>
-              <p class="result-list-text">от 3000 &#8381;</p>
-              <a class="details-btn" href="#">Подробнее</a>
-              <a class="reserved-btn" href="#">Забронировать</a>
-              <p class="rating">Рейтинг: 8,9</p>
+              <div class="card">
+                <h2 class="title-item">Desert Quail Inn</h2>
+                <img class="img" src="img/houses-img/desert-quail.jpg" width="135" height="90" alt="Небольшой дом с благоустроенной улицей">
+                <p class="result-list-text">Мотель</p>
+                <p class="result-list-text">от 3000 &#8381;</p>
+                <a class="details-btn" href="#">Подробнее</a>
+                <a class="reserved-btn" href="#">Забронировать</a>
+              </div>
+              <div class="rating-contain">
+                <p class="rating">
+                  Рейтинг: 8,9
+                </p>
+              </div>
             </li>
             <li class="result-list-items">
-              <h2 class="title-item">Villas at Poco Diablo</h2>
-              <img class="img" src="img/houses-img/poco-diablo.jpg" width="135" height="90" alt="Небольшой дом с окружении деревьев и газона">
-              <p class="result-list-text">Апартаменты</p>
-              <p class="result-list-text">от 2000 &#8381;</p>
-              <a class="details-btn" href="#">Подробнее</a>
-              <a class="reserved-btn" href="#">Забронировать</a>
-              <p class="rating">Рейтинг: 9,2</p>
+              <div class="card">
+                <h2 class="title-item">Villas at Poco Diablo</h2>
+                <img class="img" src="img/houses-img/poco-diablo.jpg" width="135" height="90" alt="Небольшой дом с окружении деревьев и газона">
+                <p class="result-list-text">Апартаменты</p>
+                <p class="result-list-text">от 2000 &#8381;</p>
+                <a class="details-btn" href="#">Подробнее</a>
+                <a class="reserved-btn" href="#">Забронировать</a>
+              </div>
+              <div class="rating-contain">
+                <p class="rating">
+                  Рейтинг: 9,2
+                </p>
+              </div>
             </li>
           </ul>
         </section>
