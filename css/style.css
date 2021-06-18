@@ -230,6 +230,7 @@
   min-width: 400px;
   min-height: 330px;
   text-align: center;
+  color: var(--basic-extra-dark);
 }
 
 .advantage-list-item:nth-child(n+3),
@@ -315,6 +316,11 @@
   padding-top: 46px;
 }
 
+.advantage-list-item:nth-child(n+3) .advantage-text-number,
+.advantage-list-item:nth-child(n+3) .advantage-text {
+  color: var(--basic-extra-dark);
+}
+
 /* Search */
 
 .section-offers {
@@ -338,6 +344,7 @@
   margin: 0;
   margin-bottom: 44px;
   line-height: 25px;
+  color: var(--basic-extra-dark);
 }
 
 .search-btn {
@@ -353,6 +360,7 @@
   background-color: var(--brown-light);
   text-transform: inherit;
   font-weight: 700;
+  border: none;
 }
 
 .search-btn:hover {
