@@ -230,6 +230,9 @@
   min-width: 400px;
   min-height: 330px;
   text-align: center;
+}
+
+.advantage-sublist-item .advantage-text {
   color: var(--basic-extra-dark);
 }
 
@@ -813,8 +816,8 @@
 .range-toggle {
   position: absolute;
   box-sizing: content-box;
-  width: 3.8px;
-  height: 3.8px;
+  width: 4px;
+  height: 4px;
   background-color: var(--toggle-center);
   border: 7.5px solid var(--basic-white);
   border-radius: 50%;
@@ -823,8 +826,8 @@
 }
 
 .range-toggle-min:hover {
-  width: 4.6px;
-  height: 4.6px;
+  width: 5px;
+  height: 5px;
   border: 9px solid var(--basic-white);
   top: -10px;
   left: -1px;
@@ -836,7 +839,7 @@
 
 .range-toggle-max:hover {
   top: -10px;
-  left: 249px;
+  left: 251px;
   width: 4.6px;
   height: 4.6px;
   border: 9px solid var(--basic-white);
