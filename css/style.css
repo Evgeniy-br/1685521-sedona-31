@@ -126,6 +126,8 @@
 }
 
 .nav-item {
+  padding-top: 14px;
+  padding-bottom: 15px;
   width: 21.5%;
 }
 
@@ -140,8 +142,7 @@
 
 .nav-link {
   display: inline-block;
-  padding-top: 14px;
-  padding-bottom: 15px;
+  vertical-align: baseline;
   color: var(--basic-black);
   text-decoration: none;
   font-weight: 700;
@@ -220,6 +221,13 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+}
+
+.advatage-img {
+  width: 800px;
+  height: 256px;
+  object-fit: contain;
+  background-color: var(--basic-neutral);
 }
 
 .advantage-sublist-item {
@@ -328,7 +336,7 @@
 
 .section-offers {
   overflow: hidden;
-  height: 291px;
+  min-height: 291px;
   text-align: center;
   padding-top: 56px;
   padding-right: 10px;
@@ -353,10 +361,10 @@
 .search-btn {
   box-sizing: content-box;
   width: 319px;
-  padding-top: 27px;
-  padding-right: 123px;
+  padding-top: 29px;
+  padding-right: 124px;
   padding-bottom: 29px;
-  padding-left: 123px;
+  padding-left: 124px;
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-white);
@@ -382,7 +390,6 @@
   left: 50%;
   margin-left: -284px;
   display: flex;
-  flex-wrap: wrap;
   width: 568px;
   min-height: 395px;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
@@ -493,12 +500,10 @@
 }
 
 .modal-label {
-  font-weight: 700;
-}
-
-.modal-label {
   display: inline-block;
+  vertical-align: baseline;
   width: 108px;
+  font-weight: 700;
 }
 
 .modal-text:nth-of-type(4) .modal-label {
@@ -582,7 +587,7 @@
 
 .social {
   margin: auto;
-  padding-top: 33px;
+  padding-top: 35px;
   padding-bottom: 36px;
 }
 
@@ -605,6 +610,7 @@
   color: inherit;
   width: 46px;
   height: 48px;
+  margin-bottom: 5px;
 }
 
 .social-link:hover {
