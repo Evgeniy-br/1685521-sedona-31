@@ -235,7 +235,7 @@
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
-  min-width: 400px;
+  width: 400px;
   min-height: 330px;
   text-align: center;
 }
@@ -251,7 +251,7 @@
   padding-right: 10px;
   padding-bottom: 23px;
   padding-left: 10px;
-  min-width: 400px;
+  width: 400px;
   min-height: 256px;
   text-align: center;
 }
@@ -390,15 +390,16 @@
   left: 50%;
   margin-left: -284px;
   display: flex;
+  flex-wrap: wrap;
   width: 568px;
   min-height: 395px;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   background-color: inherit;
 }
 
-.container {
+.container-modal {
   width: 458px;
-  height: 287px;
+  min-height: 287px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -481,12 +482,15 @@
 
 .modal-input {
   padding-top: 6px;
-  padding-right: 6px;
+  padding-right: 40px;
   padding-bottom: 6px;
   padding-left: 12px;
   width: 346px;
   height: 38px;
   background-color: var(--basic-extra-light);
+  color: var(--basic-black);
+  font-weight: 700;
+  text-transform: uppercase;
   border: none;
   margin-bottom: 27px;
 }
