@@ -655,6 +655,10 @@
 
 /* Filter */
 
+.content-catalog {
+  background-color: var(--special-white);
+}
+
 .filter-catalog {
   background-image: url(../img/background-blurred.jpg);
   background-repeat: no-repeat;
@@ -792,12 +796,14 @@
 
 .min-price {
   display: inline-block;
+  vertical-align: baseline;
   padding-top: 4px;
   padding-left: 64px;
 }
 
 .max-price {
   display: inline-block;
+  vertical-align: baseline;
   padding-top: 4px;
   padding-left: 52px;
 }
@@ -1007,6 +1013,8 @@
 .card .img {
   width: 135px;
   height: 90px;
+  object-fit: contain;
+  background-color: var(--basic-neutral);
 }
 
 .wrapper-img {
