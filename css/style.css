@@ -745,6 +745,13 @@
   top: 1px;
 }
 
+.filter-input-checkbox:focus + .checkbox-label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+
 .checkbox-label::before {
   content: "";
   position: absolute;
@@ -914,13 +921,13 @@
   padding-left: 10px;
 }
 
-.icon-sort-down {
+.icon-sort-up {
   display: flex;
   width: 11px;
   height: 10px;
 }
 
-.icon-sort-up {
+.icon-sort-down {
   display: flex;
   width: 11px;
   height: 10px;
