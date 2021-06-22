@@ -491,7 +491,7 @@
   color: var(--basic-black);
   font-weight: 700;
   text-transform: uppercase;
-  border: none;
+  border: 2px solid var(--basic-extra-light);
   margin-bottom: 27px;
 }
 
@@ -510,7 +510,7 @@
   font-weight: 700;
 }
 
-.modal-text:nth-of-type(4) .modal-label {
+.modal-label-children {
   width: 114px;
   padding-left: 53px;
 }
@@ -523,13 +523,13 @@
 
 .modal-input:hover {
   background-color: var(--basic-neutral);
-  border: none;
+  border: 2px solid var(--basic-extra-light);
 }
 
 .modal-input:focus {
   background-color: var(--basic-white);
-  border: 2px solid var(--basic-neutral-light);
   outline: none;
+  border: 2px solid var(--basic-neutral-light);
 }
 
 .modal-btn-src {
