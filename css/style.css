@@ -363,7 +363,7 @@
   width: 319px;
   padding-top: 29px;
   padding-right: 124px;
-  padding-bottom: 29px;
+  padding-bottom: 30px;
   padding-left: 124px;
   font-size: 21px;
   line-height: 26px;
@@ -385,8 +385,6 @@
 
 /* Modal window */
 
-
-
 .modal {
   position: absolute;
   left: 50%;
@@ -398,6 +396,16 @@
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   background-color: inherit;
   padding: 55px 55px 55px 55px;
+  animation: bounce 0.6s;
+}
+
+.modal-hide {
+  display: none;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
 
 .container-modal {
@@ -555,6 +563,49 @@
   color: var(--special-white-transparent);
   background-color: var(--blue-dark);
 }
+/* Animation */
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-50px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Map */
 
 .map {
   margin-bottom: -125px;
