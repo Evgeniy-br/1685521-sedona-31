@@ -28,23 +28,23 @@
   --logo-academy-fill-active: #bdbbbc;
 }
 
+
 /* Font connection */
 
 @font-face {
-  font-family: 'PT Sans' ;
-  src: url(../fonts/PTSans.woff2) format('woff2'),
-       url(../fonts/PTSans.woff) format('woff');
-       font-weight: normal;
-       font-style: normal;
+  font-family: 'PT Sans';
+  src: url(../fonts/PTSans.woff2) format('woff2'), url(../fonts/PTSans.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'PT Sans';
-  src: url(../fonts/PTSans-Bold.woff2) format('woff2'),
-       url(../fonts/PTSans-Bold.woff) format('woff');
-       font-weight: 700;
-       font-style: normal;
+  src: url(../fonts/PTSans-Bold.woff2) format('woff2'), url(../fonts/PTSans-Bold.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
+
 
 /* box-sizing value */
 
@@ -53,6 +53,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 
 /* Global */
 
@@ -107,6 +108,7 @@
   z-index: 1;
 }
 
+
 /*Navigation */
 
 .header {
@@ -156,15 +158,14 @@
   color: var(--basic-black-transparent);
 }
 
+
 /* Welcome */
 
 .picture {
   position: relative;
   width: 1200px;
   height: 509px;
-  background:
-    url(../img/welcome-sedona.png) no-repeat 50% 50%,
-    url(../img/background-welcome-sedona.jpg) no-repeat;
+  background: url(../img/welcome-sedona.png) no-repeat 50% 50%, url(../img/background-welcome-sedona.jpg) no-repeat;
   background-color: var(--blue-light);
 }
 
@@ -176,6 +177,7 @@
   background: url(../img/mask-welcome.svg) no-repeat;
   bottom: -2px;
 }
+
 
 /* Features */
 
@@ -205,7 +207,6 @@
   color: var(--basic-extra-dark);
 }
 
-
 .advantage-list {
   margin: 0;
   padding: 0;
@@ -215,7 +216,7 @@
   list-style: none;
 }
 
- .advantage-sublist {
+.advantage-sublist {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -274,7 +275,7 @@
 }
 
 .town-description,
-.bridge-description  {
+.bridge-description {
   color: var(--basic-white);
   background-color: var(--blue-light);
 }
@@ -339,6 +340,7 @@
   color: var(--basic-extra-dark);
 }
 
+
 /* Search */
 
 .section-offers {
@@ -390,6 +392,7 @@
   color: var(--special-white-transparent);
 }
 
+
 /* Modal window */
 
 .modal-wrapper {
@@ -398,7 +401,7 @@
 
 .modal {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 50%;
   margin-left: -284px;
   display: flex;
@@ -447,11 +450,11 @@
   height: 23px;
 }
 
-.calendar-btn:hover path{
+.calendar-btn:hover path {
   fill: var(--basic-black);
 }
 
-.calendar-btn:active path{
+.calendar-btn:active path {
   fill: var(--blue-light);
 }
 
@@ -470,7 +473,7 @@
   height: 11px;
 }
 
-.plus-btn:hover path{
+.plus-btn:hover path {
   fill: var(--basic-black);
 }
 
@@ -494,11 +497,11 @@
   height: 11px;
 }
 
-.restangle-btn:hover rect{
+.restangle-btn:hover rect {
   fill: var(--basic-black);
 }
 
-.restangle-btn:active rect{
+.restangle-btn:active rect {
   fill: var(--blue-light);
 }
 
@@ -506,7 +509,7 @@
   padding-top: 6px;
   padding-right: 40px;
   padding-bottom: 6px;
-  padding-left: 12px;
+  padding-left: 11px;
   width: 346px;
   height: 38px;
   background-color: var(--basic-extra-light);
@@ -520,7 +523,7 @@
 .modal-input.number {
   width: 114px;
   height: 38px;
-  padding-left: 53px;
+  padding-left: 52px;
   padding-right: 30px;
   margin-bottom: 54px;
 }
@@ -575,6 +578,8 @@
   color: var(--special-white-transparent);
   background-color: var(--blue-dark);
 }
+
+
 /* Animation */
 
 @keyframes shake {
@@ -582,7 +587,6 @@
   100% {
     transform: translateX(0);
   }
-
   10%,
   30%,
   50%,
@@ -590,7 +594,6 @@
   90% {
     transform: translateX(-10px);
   }
-
   20%,
   40%,
   60%,
@@ -603,32 +606,32 @@
   0% {
     transform: translateY(-50px);
   }
-
   70% {
     transform: translateY(30px);
   }
-
   90% {
     transform: translateY(-10px);
   }
-
   100% {
     transform: translateY(0);
   }
 }
+
 
 /* Map */
 
 .map {
   width: 1199px;
   height: 594px;
-  margin-bottom: -120px;
+  margin-bottom: -121px;
   background-image: url(../img/map.png);
+  background-color: var(--basic-light);
 }
 
 .map-google {
   border: none;
 }
+
 
 /* Footer */
 
@@ -698,7 +701,7 @@
   background-color: var(--blue-dark);
 }
 
-.social-link:active path{
+.social-link:active path {
   opacity: 0.3;
 }
 
@@ -712,23 +715,28 @@
 }
 
 .academy-logo {
+  display: block;
   width: 115px;
   height: 33px;
 }
 
-.academy-logo:hover path{
+.academy-logo:hover path {
   fill: var(--blue-light);
 }
 
-.academy-logo:active path{
+.academy-logo:active path {
   fill: var(--logo-academy-fill-active);
 }
 
 .academy-text {
+  margin-top: 9px;
   margin-left: 65px;
   margin-right: 15px;
 }
+
+
 /* Catalog */
+
 
 /* Filter */
 
@@ -806,7 +814,7 @@
   padding-left: 39px;
 }
 
-.filter-input-checkbox:checked + .checkbox-label::before {
+.filter-input-checkbox:checked+.checkbox-label::before {
   content: "";
   position: absolute;
   width: 27px;
@@ -818,12 +826,11 @@
   top: 1px;
 }
 
-.filter-input-checkbox:focus + .checkbox-label::before {
+.filter-input-checkbox:focus+.checkbox-label::before {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-
 
 .checkbox-label::before {
   content: "";
@@ -961,6 +968,7 @@
   text-transform: inherit;
 }
 
+
 /* Main content catalog */
 
 .result {
@@ -1007,12 +1015,12 @@
 }
 
 .icon-sort-up:hover path,
-.icon-sort-down:hover path{
+.icon-sort-down:hover path {
   fill: var(--basic-black);
 }
 
 .icon-sort-up:active path,
-.icon-sort-down:active path{
+.icon-sort-down:active path {
   fill: var(--blue-light);
 }
 
@@ -1068,6 +1076,7 @@
   border: none;
 }
 
+
 /* Accommodation options */
 
 .result-list {
@@ -1088,7 +1097,7 @@
   display: grid;
   grid-template-columns: 135px min-content min-content;
   grid-template-rows: min-content min-content 1fr;
-  padding-top: 23.5px;
+  padding-top: 23px;
   padding-right: 10px;
   padding-bottom: 23px;
   padding-left: 73px;
@@ -1134,7 +1143,7 @@
   padding: 0;
   line-height: 21px;
   color: var(--basic-extra-dark);
-  margin-bottom: 15.5px;
+  margin-bottom: 16px;
   padding-left: 29px;
 }
 
@@ -1228,6 +1237,3 @@
   justify-content: space-between;
   width: 41px;
 }
-
-
-
