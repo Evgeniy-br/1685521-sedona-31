@@ -6,12 +6,12 @@ const numberGrown = formModal.querySelector('[name=grown]');
 const numberChild = formModal.querySelector('[name=children]');
 
 let isStorageSupport = true;
-let storageGrown = "";
-let storageChild = "";
+let storageGrown = '';
+let storageChild = '';
 
 try {
-  storageGrown = localStorage.getItem("numberGrown");
-  storageChild = localStorage.getItem("numberChild");
+  storageGrown = localStorage.getItem('numberGrown');
+  storageChild = localStorage.getItem('numberChild');
 } catch (err) {
   isStorageSupport = false;
 }
@@ -34,7 +34,6 @@ searchBtn.addEventListener('click', function (evt) {
 })
 
 formModal.addEventListener('submit', function(evt) {
-  evt.preventDefault();
   if (!arrivalDate.value || !departureDate.value || !numberGrown.value || !numberChild.value) {
     evt.preventDefault();
     formModal.classList.remove('modal-error');
@@ -49,7 +48,7 @@ formModal.addEventListener('submit', function(evt) {
 })
 
 window.addEventListener('keydown', function(evt) {
-  if (evt.key === "Esc" || evt.key === "Escape") {
+  if (evt.key === 'Esc' || evt.key === 'Escape') {
     if (formModal.classList.contains('modal-hide')) {
       evt.preventDefault();
     } else {
